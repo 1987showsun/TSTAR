@@ -1074,6 +1074,16 @@ body{
     @include pc{
       max-width : 80vw;
     };
+    @include pad{
+      &[data-paddind="true"]{
+        padding: 0px 20px !important;
+      }
+    }
+    @include mobile{
+      &[data-paddind="true"]{
+        padding: 0px 20px !important;
+      }
+    }
   }
 }
 
@@ -1555,7 +1565,11 @@ body{
             margin-top: 5px;
             flex-direction: column;
             >li{
+              text-align: left !important;
               padding: 5px 0px;
+              a{
+                justify-content: flex-start !important;
+              }
             }
           }
         }
