@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascripts/scroll.js"></script>
+    <script type="text/javascript" src="../javascripts/plugin.js"></script>
+    <script type="text/javascript" src="../javascripts/ie8-fix.js"></script>
+    <script type="text/javascript" src="../javascripts/default.js"></script>
+  </head>
+  <body>
+    <% include header %>
+
+    <article id="wrapper" data-whatPage="store">
+      <main id="content">
+
+        <article class="tsContent justifyContent">
+          <main class="maxWidth">
+            <div class="talk">
+              <div class="img">
+                <img src="https://www.tstartel.com/static/misc/images/hotsell/selldoll.png">
+              </div>
+              <div class="talkContent">
+                <span class="talkText">網路門市24小時不打烊，免出門，宅配到家超方便！還有獨家優惠更便宜！</span>
+                <ul class="list talkNav">
+                  <li><a href="#" class="btnStyleModel5">保證最低價</a></li>
+                  <li><a href="#" class="btnStyleModel5">$288吃到飽</a></li>
+                  <li><a href="#" class="btnStyleModel5">退差價吃到飽</a></li>
+                  <li><a href="#" class="btnStyleModel5">熱門新機下殺</a></li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </article>
+        <article class="tsContent justifyContent" style="background-color:#f8f8f8;">
+          <main class="maxWidth">
+            <div class="googleMap">
+              <iframe src="https://maps.google.com.tw/maps?f=q&amp;source=s_q&amp;hl=zh-TW&amp;geocode=+&amp;q=%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%BE%85%E6%96%AF%E7%A6%8F%E8%B7%AF3%E6%AE%B5278%E8%99%9F&amp;ie=UTF8&amp;hq=&amp;hnear=100%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E6%AD%A3%E5%8D%80%E7%BE%85%E6%96%AF%E7%A6%8F%E8%B7%AF%E4%B8%89%E6%AE%B5278%E8%99%9F&amp;t=m&amp;z=14&amp;brcurrent=3,0x3442a99bd1adbcc7:0xc5ab69bb7491162a,0,0x3442ac6b61dbbd9d:0xc0c243da98cba64b&amp;ll=25.016603,121.532065&amp;output=embed" frameborder="0" scrolling="no" marginheight="0"></iframe>
+            </div>
+            <div class="selectContent">
+              <form>
+                <span>請透過下拉選單選擇縣市與地區：</span>
+                <select id="city" name="city" onchange="getZip(this);">
+                  <option selected="selected" value="">請選擇縣市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="基隆市">基隆市</option>
+                  <option value="連江縣">連江縣</option>
+                  <option value="新北市">新北市</option>
+                  <option value="宜蘭縣">宜蘭縣</option>
+                  <option value="新竹市">新竹市</option>
+                  <option value="新竹縣">新竹縣</option>
+                  <option value="桃園市">桃園市</option>
+                  <option value="苗栗縣">苗栗縣</option>
+                  <option value="台中市">台中市</option>
+                  <option value="彰化縣">彰化縣</option>
+                  <option value="南投縣">南投縣</option>
+                  <option value="嘉義市">嘉義市</option>
+                  <option value="嘉義縣">嘉義縣</option>
+                  <option value="雲林縣">雲林縣</option>
+                  <option value="台南市">台南市</option>
+                  <option value="高雄市">高雄市</option>
+                  <option value="澎湖縣">澎湖縣</option>
+                  <option value="金門縣">金門縣</option>
+                  <option value="屏東縣">屏東縣</option>
+                  <option value="台東縣">台東縣</option>
+                  <option value="花蓮縣">花蓮縣</option>
+                </select>
+                <select id="zip" name="zip">
+                  <option selected="selected" value="">請選擇地區</option>
+                </select>
+                <input id="address" name="address" type="text" placeholder="搜尋地址">
+                <button type="submit">查 詢</button>
+              </form>
+            </div>
+            <div class="searchContent">
+              <ul class="list table" data-caption="true">
+                <li class="caption">台北市 內湖區</li>
+                <li class="thead">
+                  <ul>
+                    <li>店點名稱</li>
+                    <li>地 址 / 電 話</li>
+                    <li>營業時間</li>
+                    <li>動作</li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="list table">
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="direct">
+                        直營
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);">聯絡門市</a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);">規劃路線</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="direct">
+                        直營
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="direct">
+                        直營
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="direct">
+                        直營
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="direct">
+                        直營
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="appointed">
+                        特約
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="direct">
+                        直營
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tbody">
+                  <ul>
+                    <li>
+                      <span class="storeTag" data-storeTag="appointed">
+                        特約
+                      </span>
+                      台北西湖(服務中心)
+                    </li>
+                    <li>台北市內湖區內湖路一段315號<br/>0908-445-275</li>
+                    <li>週一~週日<br/>12:00~21:30<br/>週一~週日<br/>12:00~21:30</li>
+                    <li>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/tel.png);"></a>
+                      <a href="#" style="background-image:url(https://www.tstartel.com/resources/common/mobile/css/images/icon/map.png);"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </main>
+        </article>
+
+      </main>
+    </article>
+    <% include footer %>
+  </body>
+</html>

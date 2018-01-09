@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/scroll.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('.slick-track').slick({
+          centerMode     : false,
+          dots           : true,
+          infinite       : true,
+          autoplay       : true,
+          speed          : 500,
+          slidesToShow   : 1,
+          slidesToScroll : 1
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <article id="wrapper">
+
+      <% include header %>
+
+      <main id="content">
+        <article class="tsContent even fullscreen">
+          <div class="slick-track">
+            <div style="background-image:url(https://www.tstartel.com/upload/1/index/426/1_rwd_i_001_1_1_I1.jpg)">
+              <a href="http://www.yahoo.com.tw" target="_blank"></a>
+              <!--<div class="text">
+                <h3>一人公司<br/>同享大企業優惠</h3>
+                <a>小老闆專屬資費</a>
+              </div>-->
+            </div>
+            <div style="background-image:url(https://www.tstartel.com/upload/1/index/426/1_rwd_i_001_1_2_I1.jpg)">
+              <a href="http://www.yahoo.com.tw" target="_blank"></a>
+              <!--<div class="text">
+                <h3>一人公司<br/>同享大企業優惠</h3>
+                <a>小老闆專屬資費</a>
+              </div>-->
+            </div>
+            <div style="background-image:url(https://www.tstartel.com/upload/1/index/426/1_rwd_i_001_1_400_I1.jpg)">
+              <a href="http://www.yahoo.com.tw" target="_blank"></a>
+              <!--<div class="text">
+                <h3>一人公司<br/>同享大企業優惠</h3>
+                <a>小老闆專屬資費</a>
+              </div>-->
+            </div>
+            <div style="background-image:url(https://www.tstartel.com/upload/1/index/426/1_rwd_i_001_1_500_I1.jpg)">
+              <a href="http://www.yahoo.com.tw" target="_blank"></a>
+              <!--<div class="text">
+                <h3>一人公司<br/>同享大企業優惠</h3>
+                <a>小老闆專屬資費</a>
+              </div>-->
+            </div>
+            <div style="background-image:url(https://www.tstartel.com/upload/1/index/432/1_rwd_i_001_1_501_I1.jpg)">
+              <a href="http://www.yahoo.com.tw" target="_blank"></a>
+              <!--<div class="text">
+                <h3>一人公司<br/>同享大企業優惠</h3>
+                <a>小老闆專屬資費</a>
+              </div>-->
+            </div>
+          </div>
+        </article>
+
+        <article class="tsContent notStaggered fullscreen indexPage2 margin right">
+          <main>
+            <h3>我們想要給你的<br/>不只是省錢</h3>
+            <p>打折降價很簡單<br/>但我們最在意，如何滿足你的需要<br/>三大電信的價格、方案、服務都相似<br/>我們堅持給你不一樣的選擇，給你最有利</p>
+            <a class="btnStyleModel1">給你更自由彈性的資費選擇</a>
+          </main>
+          <!--<aside>
+            <img src="https://t-star.gitlab.io/website/images/slide-man.png"/>
+          </aside>-->
+        </article>
+
+        <article class="tsContent notStaggered fullscreen indexPage3 margin right">
+          <main>
+            <h3>訊號好不好<br/>查一查就知道</h3>
+            <p>台灣之星用戶滿意度高達95%<br/>用過都說好<br/>首創全台網路訊號地圖<br/>超過2萬用戶實測分享<br/>好不好用，歡迎你來查</p>
+            <a class="btnStyleModel1">網路品質查詢</a>
+          </main>
+        </article>
+
+        <article class="tsContent fullscreen indexPage4 flexCenterBottom">
+          <main>
+            <h3>挺小老闆<br/>月租費直接降35%</h3>
+            <p>各行各業小老闆，我們和你一樣深知打拼的辛苦，所以負擔我們幫你減輕<br/>專屬小老闆方案，月租降價，手機享折扣，一人公司同享大企業優惠</p>
+            <a class="btnStyleModel1">網路品質查詢</a>
+          </main>
+        </article>
+
+        <article class="tsContent justifyContent">
+          <ul class="tsContentFluidNav">
+            <li>
+              <img src="https://t-star.gitlab.io/website/images/ts-ad-news.jpg" alt="" title="" />
+              <section class="absolute">
+                <section class="text">
+                  <!--<span class="subtitle">最新消息小標</span>-->
+                  <span class="title">最新消息</span>
+                </section>
+                <section class="action">
+                  <ul>
+                    <li><a class="btnStyleModel1">查看最新消息</a></li>
+                  </ul>
+                </section>
+              </section>
+            </li>
+            <li>
+              <img src="https://t-star.gitlab.io/website/images/ts-ad-video.jpg" alt="" title="" />
+              <section class="absolute">
+                <section class="text">
+                  <!--<span class="subtitle">最新消息小標</span>-->
+                  <span class="title">廣告專區</span>
+                </section>
+                <section class="action">
+                  <ul>
+                    <li><a class="btnStyleModel1">播放影片</a></li>
+                  </ul>
+                </section>
+              </section>
+            </li>
+            <li>
+              <img src="https://t-star.gitlab.io/website/images/ts-ad-fanpage.jpg" alt="" title="" />
+              <section class="absolute">
+                <section class="text">
+                  <!--<span class="subtitle">最新消息小標</span>-->
+                  <span class="title">官方粉絲團</span>
+                </section>
+                <section class="action">
+                  <ul class="icon">
+                    <li>
+                      <a class="btnStyleModel1">
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNDMwLjExMyA0MzAuMTE0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MzAuMTEzIDQzMC4xMTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBpZD0iRmFjZWJvb2siIGQ9Ik0xNTguMDgxLDgzLjNjMCwxMC44MzksMCw1OS4yMTgsMCw1OS4yMThoLTQzLjM4NXY3Mi40MTJoNDMuMzg1djIxNS4xODNoODkuMTIyVjIxNC45MzZoNTkuODA1ICAgYzAsMCw1LjYwMS0zNC43MjEsOC4zMTYtNzIuNjg1Yy03Ljc4NCwwLTY3Ljc4NCwwLTY3Ljc4NCwwczAtNDIuMTI3LDAtNDkuNTExYzAtNy40LDkuNzE3LTE3LjM1NCwxOS4zMjEtMTcuMzU0ICAgYzkuNTg2LDAsMjkuODE4LDAsNDguNTU3LDBjMC05Ljg1OSwwLTQzLjkyNCwwLTc1LjM4NWMtMjUuMDE2LDAtNTMuNDc2LDAtNjYuMDIxLDBDMTU1Ljg3OC0wLjAwNCwxNTguMDgxLDcyLjQ4LDE1OC4wODEsODMuM3oiIGZpbGw9IiNGRkZGRkYiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+            </li>
+          </ul>
+        </article>
+
+        <!--<article class="tsContent justifyContent indexPage5">
+          <article class="tsContent-center">
+            <ul class="tsContentFluidNav">
+              <li>
+                <figure>
+                  <div class="img">
+                    <img src="https://t-star.gitlab.io/website/images/ts-ad-news02.jpg" alt="The Pulpit Rock" />
+                  </div>
+                  <figcaption>
+                    <h3>最新消息</h3>
+                    <p>台灣之星總營收創新高 年增率25% 以實力贏得行銷界奧斯</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <div class="img">
+                    <img src="https://t-star.gitlab.io/website/images/ts-ad-video02.jpg" alt="The Pulpit Rock" />
+                  </div>
+                  <figcaption>
+                    <h3>最新消息</h3>
+                    <p>台灣之星總營收創新高 年增率25% 以實力贏得行銷界奧斯</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <div class="img">
+                    <img src="https://t-star.gitlab.io/website/images/ts-ad-fanpage02.jpg" alt="The Pulpit Rock" />
+                  </div>
+                  <figcaption>
+                    <h3>最新消息</h3>
+                    <p>台灣之星總營收創新高 年增率25% 以實力贏得行銷界奧斯</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </article>
+        </article>-->
+      </main>
+
+      <% include footer %>
+    </article>
+  </body>
+</html>
